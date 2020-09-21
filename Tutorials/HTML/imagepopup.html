@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <style>
+        p {
+            background-color: lightgray;
+            margin: 0;
+            padding: 10px;
+            text-indent: 2.0em;
+        }
+
+        div {
+            margin: 0;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">Hello World!</p>
+    <div>
+        Hello
+    </div>
+    <script>
+            document.getElementById("demo").onclick = function () {
+                myFunction();
+            }
+            function myFunction() {
+                document.getElementById("demo").innerHTML = '<img src="kirby1.gif" width="150">';
+            }
+    </script>
+</body>
+</html>

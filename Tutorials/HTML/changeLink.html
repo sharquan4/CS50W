@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change link</title>
+    </head>
+    <body>
+        <a id="link" href="https://google.com">Google</a>
+        <button onclick="change()">Click Here</button>
+        <script>
+            function change() {
+                document.getElementById("link").innerHTML = "Amazon";
+                document.getElementById("link").href = "https://amazon.com";
+                document.getElementById("link").target = "_blank";
+            }
+        </script>
+    </body>
+</html>

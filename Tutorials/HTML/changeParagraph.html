@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Change Paragraph</title>
+    </head>
+    <body>
+        <!--1-->
+        <p><b>Click text below to change text</b></p>
+        <p id="demo1" onclick="change()">Hello World!</p>
+        
+        <hr size="2" width="100%" color="blue" />
+
+        <!--2-->
+        <p><strong>Click button to overwrite the paragraph below</strong></p>
+        <button onclick="Start()">Click Here</button>
+        <p id="shit">Hello World!</p>
+
+        <hr size="2" width="100%" color="blue" />
+
+        <!--3-->
+        <p><b>Click this button to overwrite the list below using a variable</b></p>
+        <button onclick="start()">Click Here</button>
+        <ol id="lame">
+            <li>Games</li>
+            <li>Food</li>
+            <li>Drinks</li>
+        </ol>
+        <p id="new"></p>
+
+        <!--Javascript-->
+        <script>
+            function change() {
+                document.getElementById("demo1").innerHTML = "Fuck you world!";
+            }
+            function Start() {
+                document.getElementById("shit").innerHTML = "pu$$y";
+            }
+            function start() {
+                var x = document.getElementById("lame").innerHTML;
+                document.getElementById("new").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>
